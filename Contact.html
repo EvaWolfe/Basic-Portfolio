@@ -1,49 +1,88 @@
 <!DOCTYPE html>
 
 <html lang="en-US">
-
+<!-- About Me Page -->
 <head>
-	
 	<title>Contact | Eva King</title>
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
 </head>
 
 <body>
-
-	<header>
-		
-		<a href="index.html"><h1>Eva King</h1></a>
 	
-	<nav class="navBar">
-		
-		<a href="index.html">About</a>
-		<a href="portfolio.html">Portfolio</a>
-		<a href="contact.html">Contact</a>
+	<header id="mainHead">
+	
+	<div class="container">
+		<a href="index.html" id= "logo">Eva King</a>
+	
+		<nav>
 
-	</nav>
+			
+			<a href="index.html">About</a>
+			<a href="portfolio.html">Portfolio</a>
+			<a href="contact.html">Contact</a>
+
+		</nav>
+	</div>
 
 	</header>
 
-	
-	<h2>Contact</h2>
+		<div id="mainContainer" class="container">
 
-	<h4>Name</h4>
-	<!-- Create Box??? -->
-	<h4>Email</h4>
-	<!-- Create Box?? -->
-	<h4>Message</h4>
-	<!-- Create Large Box??? -->
-	<h2>Submit</h2>
-	<!-- Submit button needs to also be a link?? -->
+			<section class="mainSection">
 
-		<h3>Connect with Me</h3>
-	<!-- COME BACK & ADD IMAGE LINKS TO SOCIAL MEDIA STUFF -->
-	<a href="http://www.github.com/EvaWolfe"><img alt= "Github" src="assets/images/github.png" width="50" height="50"></a>
-	<a href="https://www.linkedin.com/in/eva-w-3020ab148"><img src="assets/images/linkedin.png" width="50" height="50"></a>
-	<a href="https://stackoverflow.com/users/8464481/e-wolfe"><img src="assets/images/stackoverflow.png" width="50" height="50"></a>
+				<h1>Contact</h1>
 
-</body>
+				<form id="contactForm">
+					<ul>
+						<li>
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" placeholder="John Smith" required="required">
+						</li>
+
+						<li>
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" placeholder="John.Smith@fake.com" required="required">
+						</li>
+
+						<li>
+							<label for="message">Message</label>
+							<textarea id="message" name="message" required="required"></textarea>
+						</li>
+
+						<li>
+							<input type="submit" name="submit">
+						</li>
+					</ul>
+				</form>		
+			</section>	
+
+			<section class="sidebar">
+		
+				<div id="Connect">
+
+					<h2>Connect with Me</h2>
+
+					<a href="http://www.github.com/EvaWolfe"><img src="assets/images/github.png" alt="github" class="SOCIAL"></a>
+					<a href="https://www.linkedin.com/in/eva-w-3020ab148"><img src="assets/images/linkedin.png" alt="linkedin" class="SOCIAL"></a>
+					<a href="https://stackoverflow.com/users/8464481/e-wolfe"><img src="assets/images/stackoverflow.png" alt="stackoverflow" class="SOCIAL"></a>
+
+				</div>
+
+			</section>
+
+		</div>
+
+		<footer>
+			
+			<div class="container"> 
+				
+				&copy; Copyright 2017 Eva King
+			
+			</div>
+
+		</footer>
+
+	</body>
 
 </html>
